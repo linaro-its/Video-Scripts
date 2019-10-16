@@ -1,3 +1,3 @@
-# Linaro-ITS Template
+# Video Scripts
 
-Settings for Git and editors popular with [Linaro-ITS](https://github.com/linaro-its/).
+Quick hack script to downsample video. Used for pre-processing [Linaro Connect](https://connect.linaro.org/) videos before upload.
