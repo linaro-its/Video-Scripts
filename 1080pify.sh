@@ -78,10 +78,11 @@ parse_input_filename() {
 }
 
 downscale_to_1080p() {
-  echo "$TIME_PATH" "$NICE_PATH" -n "$NICE_VALUE" \
-  "$FFMPEG_PATH" -i "$INPUT_FILE" -vf "$FFMPEG_SCALE" -map_metadata 0 "$INPUT_FILE_FIRST_ELEMENT"_1080p."$INPUT_FILE_EXTENSION"
+  # Print command before execution, expanding variables
+  set -x
   "$TIME_PATH" "$NICE_PATH" -n "$NICE_VALUE" \
   "$FFMPEG_PATH" -i "$INPUT_FILE" -vf "$FFMPEG_SCALE" -map_metadata 0 "$INPUT_FILE_FIRST_ELEMENT"_1080p."$INPUT_FILE_EXTENSION"
+  set +x
 }
 
 # EXECUTION
