@@ -1,0 +1,17 @@
+# `man 5 .gitattributes`
+# Text files
+# Normalise to LF line endings on check-in
+*             text=auto
+CODEOWNERS    text
+*.md          text
+
+# Binary files, never modify on check-in
+# Images
+*.ico         binary
+*.jpg         binary
+*.png         binary
+# Fonts
+*.eot         binary
+*.ttf         binary
+*.woff        binary
+*.woff2       binary

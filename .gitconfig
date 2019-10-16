@@ -1,0 +1,3 @@
+[core]
+	autocrlf = input
+	whitespace=trailing-space,-space-before-tab,tab-in-indent
